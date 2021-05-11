@@ -1,17 +1,17 @@
-###VillageGreen
+###VillageGreen\
 -vil_ID
 -vil_Name
 -vil_location
 -vil_Zipcode
 -vil_city
 
-##Employee
+##Employee\
 -emp_ID
 -emp_name
 -emp_lastname
 -emp_postDepartment
 
-##Supplier
+##Supplier\
 -sup_ID
 -sup_name
 -sup_location
@@ -23,7 +23,7 @@
 -sup_productCategory
 
 
-##Product  
+##Product\
 -pro_ID
 -pro_label
 -pro_picture
@@ -38,12 +38,12 @@
 -pro_Stock
 -pro_StockAlert
 
-##Sub_category_product  
+##Sub_category_product\  
 -sub_ID
 -sub_name
 -sub_quantity
 
-##Order  
+##Order\  
 -ord_name
 -ord_adressShipping
 -ord_Zipcode
@@ -53,20 +53,20 @@
 -ord_shippingDate
 -ord_paiementMethod
 
-##Sell  
+##Sell\  
 -sel_ID
 -sel_UnitPrice
 -sel_quantity
 
 
-##Shop  
+##Shop\  
 -sho_ID
 -sho_Name
 -sho_location
 -sho_Zipcode
 -sho_city
 
-##Particular  
+##Particular\  
 -par_ID
 -par_name
 -par_lastname
