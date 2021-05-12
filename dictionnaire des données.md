@@ -32,31 +32,29 @@
 -pro_picture
 -pro_description
 -pro_EAN
--pro_refSupplier
 -pro_color
 -pro_dateIn
 -pro_dateUpdate
--pro_category
+-pro_cat_ID
 -pro_PriceUnitHt
 -pro_Stock
 -pro_StockAlert
 
-##Sub_category_product\  
--sub_ID
--sub_name
--sub_quantity
+##Category_product\  
+-cat_ID
+-cat_name
+-cat_parentID
 
 ##OrderClient(shop)\  
 -ord_ID
--ord_nameClient
 -ord_adressShipping
--ord_Zipcode
--ord_city
+-ord_ZipcodeShipping
+-ord_cityShipping
 -ord_shippmentMode
 -ord_orderDate
 -ord_shippingDate
 -ord_paiementMethod
--ord_paiementDate
+-ord_paiementDate(current or diff)
 -ord_receiptAdress (facture)
 -ord_receipt(facture)
 
@@ -71,13 +69,18 @@
 
 #StockOrder(To VillageGreen)\  
 -sto_ID
--sto_
 -sto_dateCommand
--sto_quantity
--sto_UnitPriceHT
 -sto_adressShipping
--sto_Zipcode
--sto_city
+-sto_ZipcodeShipping
+-sto_cityShipping
+
+##StockOrder_detail(To Village Green)\  
+-sod_ID
+-sod_UnitPriceHT
+-sod_quantity
+-sod_taxe
+-sod_discount
+
 
 ##Client\  
 -cli_ID
