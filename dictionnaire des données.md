@@ -78,7 +78,6 @@
 -sod_ID
 -sod_UnitPriceHT
 -sod_quantity
--sod_taxe
 -sod_discount
 
 
@@ -90,9 +89,10 @@
 -cli_adress
 -cli_Zipcode
 -cli_city
--cli_mail
--cli_phoneNumber
+-cli_mail(unique)
+-cli_phoneNumber(unique)
 -cli_memberName
+-cli_password
 -cli_newMemberDate
 -cli_category
 
