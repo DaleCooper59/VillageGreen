@@ -1,37 +1,30 @@
 ###VillageGreen\
--vil_ID
--vil_Name
--vil_location
--vil_Zipcode
--vil_city
 
 ##Employee\
--emp_ID
+-emp_ID(PK)
 -emp_name
 -emp_lastname
+-emp_age
 -emp_role
+-emp_phoneNumber(unique)
+-emp_contactMail(unique)
+-emp_companyName
+-emp_companyAdress
+-emp_companyZipcode
+-emp_companyCity
 
 ##Supplier\
--sup_ID
+-sup_ID(PK)
 -sup_name
 -sup_location
 -sup_Zipcode
 -sup_city
+-sup_phoneNumber(unique)
+-sup_contactMail(unique)
 -sup_category(constructor, importator)
 -sup_refProduct
 -sup_productName
--sup_productCategory
 -sup_UnitPriceHT
-
-#Order(To VillageGreen)\  
--ord_vil_ID
--ord_vil_productName
--ord_vil_dateCommand
--ord_vil_quantity
--ord_vil_UnitPriceHT
--ord_vil_adressShipping
--ord_vil_Zipcode
--ord_vil_city
 
 ##Product\
 -pro_ID
@@ -53,25 +46,38 @@
 -sub_name
 -sub_quantity
 
-##Order_(shop)\  
--ord_name
+##OrderClient(shop)\  
+-ord_ID
+-ord_nameClient
 -ord_adressShipping
 -ord_Zipcode
 -ord_city
 -ord_shippmentMode
--ord_buyDate
+-ord_orderDate
 -ord_shippingDate
 -ord_paiementMethod
 -ord_paiementDate
--ord_receiptAdress
--ord_receipt
+-ord_receiptAdress (facture)
+-ord_receipt(facture)
 
 ##Sell_detail(To shop)\  
 -sel_ID
 -sel_UnitPrice
 -sel_quantity
+-sel_taxe
 -sel_discount
 -sel_specialDiscount
+
+
+#StockOrder(To VillageGreen)\  
+-sto_ID
+-sto_
+-sto_dateCommand
+-sto_quantity
+-sto_UnitPriceHT
+-sto_adressShipping
+-sto_Zipcode
+-sto_city
 
 ##Client\  
 -cli_ID
