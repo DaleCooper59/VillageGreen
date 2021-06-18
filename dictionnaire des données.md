@@ -8,10 +8,8 @@
 -emp_role
 -emp_phoneNumber(unique)
 -emp_contactMail(unique)
--emp_companyName
--emp_companyAdress
--emp_companyZipcode
--emp_companyCity
+-emp_companyPhoneNumber
+
 
 ##Supplier\
 -sup_ID(PK)
@@ -21,14 +19,13 @@
 -sup_city
 -sup_phoneNumber(unique)
 -sup_contactMail(unique)
--sup_category(constructor, importator)
--sup_refProduct
--sup_productName
--sup_UnitPriceHT
+-sup_category(constructor(1), importator(2))
+
 
 ##Product\
 -pro_ID
 -pro_label
+-pro_ref
 -pro_picture
 -pro_description
 -pro_EAN
